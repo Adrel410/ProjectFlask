@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
+    <title>about</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+        <h1>About {{ aboutName }}</h1>
+        <h1>Adeola Ogundipe</h1>
+        <p>3528 Gentian Blvd, Columbus GA. 31907</p>
+        <p>Phone: 678-668-3880</p>
+        <p>Email: adeogund123@gmail.com</p>
+
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Bachelor of Science in Computer Science - Web Development</strong></li>
+            <li>Columbus State University</li>
+            <li>Expected Graduation: May 2024</li>
+        </ul>
+
+        <ul>
+            <li><strong>Computer Programming</strong></li>
+            <li>Chattahoochee Technical College</li>
+        </ul>
+
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Software Engineer Intern</strong></li>
+            <li>Redvest Finance, Columbus, GA | 2022- tilldate</li>
+            <li>
+                - Collaborated with a dynamic team to develop a stock market simulator mobile app called Redvest.
+                - Designed, developed, tested, and deployed software applications, contributing to the overall improvement of the mobile app's performance and user experience.
+                - Worked closely with cross-functional teams, including product managers, engineers, and designers, to identify and implement solutions to meet business needs.
+                - Demonstrated proficiency in programming languages such as Java, Python, and C++.
+                - Utilized Agile methodologies for software development, ensuring efficient project delivery.
+                - Applied software design patterns and principles to enhance code quality and maintainability.
+                - Engaged in software testing and test-driven development (TDD) to identify and resolve issues.
+                - Developed a strong understanding of data structures, algorithms, and version control systems like Git.
+                - Gained experience with web application development frameworks such as React and Angular.
+                - Familiarized with database technologies, including SQL and NoSQL, to manage and manipulate data effectively.
+                - Showcased excellent problem-solving skills and demonstrated strong communication and collaboration abilities.
+            </li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Strong proficiency in one or more programming languages such as Java, Python, or C++.</li>
+            <li>Experience with software development methodologies, such as Agile or Scrum.</li>
+            <li>Familiarity with software design patterns and principles.</li>
+            <li>Experience with software testing and test-driven development (TDD).</li>
+            <li>Knowledge of data structures and algorithms.</li>
+            <li>Understanding of version control systems, such as Git.</li>
+            <li>Experience with web application development frameworks, such as React or Angular.</li>
+            <li>Familiarity with database technologies, such as SQL or NoSQL.</li>
+            <li>Excellent problem-solving skills.</li>
+            <li>Strong communication and collaboration skills.</li>
+        </ul>
+    {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
