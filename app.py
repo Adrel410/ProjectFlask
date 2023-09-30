@@ -1,7 +1,12 @@
 from flask import Flask, render_template   
 from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for, flash, session
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key_here'  # Change this to a secure key
+app.config['SESSION_TYPE'] = 'filesystem'  # Set the session type
+bootstrap = Bootstrap(app)
 
 # Sample job listings (you can replace this with a database)
 job_listings = [
